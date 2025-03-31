@@ -22,6 +22,9 @@ publishDir            = "public"				# 站点静态文件保存目录
     nightMode     = false					# 默认站点为深色(夜间)模式
     yiyan         = true                         		# 默认启用一言服务
     fancybox      = true                                        # 使用 Fancybox 实现图片灯箱/放大功能
+    assetsDir         = "assets"                    # 静态资源目录
+    assetsPath        = "/assets/"                  # 静态资源路径
+    assetsURL         = "https://navibox.org/assets/"  # 静态资源URL
 
 [params.seo]    
     baiduhmid       = ''	# 百度统计 hm.src 的 ID
