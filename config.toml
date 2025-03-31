@@ -1,4 +1,4 @@
-baseURL               = "http://localhost:1313/"
+baseURL               = "https://navibox.org/"
 languageCode          = "zh-CN"
 title                 = "我的AI导航"
 theme                 = "navibox"
