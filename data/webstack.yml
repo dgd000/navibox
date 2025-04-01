@@ -49,6 +49,10 @@
       logo: xunfei-xinghuo.png
       url: https://xinghuo.xfyun.cn/
       description: 语音交互领先，教育医疗垂直场景优化
+    - title: Kimi
+      logo: kimi.png
+      url: https://kimi.moonshot.cn/
+      description: 专注长上下文理解，200万字单次解析
 
 
 - taxonomy: AI图像
@@ -107,33 +111,53 @@
     
       
 
-# - taxonomy: AI写作
-#   icon: fas fa-tools fa-lg
-#   links:
-#     - title: NCBI
-#       logo: ncbi.jpg
-#       url: https://www.ncbi.nlm.nih.gov/
-#       description: National Center for Biotechnology Information.
-#     - title: Bioconda
-#       logo: bioconda.jpg
-#       url: https://anaconda.org/bioconda/
-#       description: "Bioconda :: Anaconda.org."
-#     - title: CPAN
-#       logo: cpan.jpg
-#       url: https://metacpan.org/
-#       description: Search the CPAN.
-#     - title: Galaxy Project
-#       logo: galaxy_project.png
-#       url: https://galaxyproject.org/
-#       description: Galaxy Community Hub.
-#     - title: R Project
-#       logo: r-project.jpg
-#       url: https://www.r-project.org/
-#       description: https://www.r-project.org
-#     - title: Bioconductor
-#       logo: bioconductor.jpg
-#       url: http://www.bioconductor.org/
-#       description: http://www.bioconductor.org
+- taxonomy: AI写作
+  icon: fas fa-tools fa-lg
+  links:
+    - title: Claude
+      logo: claude.png
+      url: https://claude.ai/
+      description: Anthropic安全合规标杆，长文本处理专家
+    - title: Kimi
+      logo: kimi.png
+      url: https://kimi.moonshot.cn/
+      description: 专注长上下文理解，200万字单次解析
+    - title: 豆包
+      logo: doubao.png
+      url: https://www.doubao.com/chat/
+      description: 字节跳动轻量化AI助手，中文语义理解优化
+    - title: 笔灵AI写作
+      logo: biling.png
+      url: https://ibiling.cn/
+      description: 结构化写作专家，支持模板化内容生产
+    - title: 笔灵AI小说
+      logo: biling-novel.png
+      url: https://ibiling.cn/novel-workbench
+      description: 网文生成利器，支持多流派小说大纲创作
+    - title: 讯飞写作
+      logo: xunfei-xiezuo.png
+      url: https://huixie.iflyrec.com/
+      description: 语音转写同步，会议纪要智能生成
+    - title: 火山写作
+      logo: huoshan-xiezuo.png
+      url: https://www.doubao.com/chat/
+      description: 字节免费AI写作助手，已合并至豆包
+    - title: 迅捷AI写作
+      logo: xunjie.png
+      url: https://www.aichat1234.com/
+      description: 快速生成营销文案，新媒体写作助手
+    - title: Paperpal
+      logo: paperpal.png
+      url: https://www.editage.cn/paperpal
+      description: 英语论文写作润色综合AI工具
+    - title: Notion AI
+      logo: notion.png
+      url: https://www.notion.com/
+      description: 智能笔记联动，自动生成文档大纲
+    - title: 新华妙笔
+      logo: xinhua.png
+      url: https://miaobi.xinhuaskl.com/
+      description: 政务公文智能起草，合规性自动校验
 
 
 # - taxonomy: AI办公
@@ -250,33 +274,65 @@
 
 
 
-# - taxonomy: AI编程
-#   icon: fas fa-pencil-alt fa-lg
-#   links:
-#     - title: NCBI
-#       logo: ncbi.jpg
-#       url: https://www.ncbi.nlm.nih.gov/
-#       description: National Center for Biotechnology Information.
-#     - title: Bioconda
-#       logo: bioconda.jpg
-#       url: https://anaconda.org/bioconda/
-#       description: "Bioconda :: Anaconda.org."
-#     - title: CPAN
-#       logo: cpan.jpg
-#       url: https://metacpan.org/
-#       description: Search the CPAN.
-#     - title: Galaxy Project
-#       logo: galaxy_project.png
-#       url: https://galaxyproject.org/
-#       description: Galaxy Community Hub.
-#     - title: R Project
-#       logo: r-project.jpg
-#       url: https://www.r-project.org/
-#       description: https://www.r-project.org
-#     - title: Bioconductor
-#       logo: bioconductor.jpg
-#       url: http://www.bioconductor.org/
-#       description: http://www.bioconductor.org
+- taxonomy: AI编程
+  icon: fas fa-pencil-alt fa-lg
+  links:
+    - title: Cursor
+      logo: cursor.png
+      url: https://www.cursor.com/
+      description: 智能代码编辑器，集成GPT-4实时补全
+    - title: Bolt.new
+      logo: bolt-new.png
+      url: https://bolt.new/
+      description: 极速项目脚手架生成，支持主流框架
+    - title: Trae
+      logo: trae.png
+      url: https://www.trae.com.cn/
+      description: 企业级代码训练平台，定制AI编程模型
+    - title: Windsurf
+      logo: windsurf.png
+      url: https://codeium.com/windsurf
+      description: 实时代码审查，自动生成单元测试
+    - title: 通义灵码
+      logo: tongyi-lingma.png
+      url: https://lingma.aliyun.com/lingma
+      description: 阿里云IDE插件，Java/Python专项优化
+    - title: 豆包MarsCode
+      logo: marscode.png
+      url: https://www.marscode.cn/
+      description: 云端协同开发，支持低代码配置
+    - title: 豆包AI编程
+      logo: doubao.png
+      url: https://www.doubao.com/chat/coding
+      description: 对话式代码生成，中文语境优化
+    - title: 文心快码
+      logo: comate-baidu.png
+      url: https://comate.baidu.com/
+      description: 百度PaddlePaddle驱动，中文代码理解
+    - title: 腾讯云AI代码助手
+      logo: tencent-code.png
+      url: https://cloud.tencent.com/product/acc
+      description: 云原生开发助手，无缝对接TKE服务
+    - title: CodeGeeX
+      logo: codegeex.png
+      url: https://codegeex.cn/
+      description: 多语言代码翻译，支持130+编程语言
+    - title: iFlyCode
+      logo: iflycode.png
+      url: https://iflycode.xfyun.cn/index
+      description: 语音驱动编程，声纹识别安全验证
+    - title: Project IDX
+      logo: project-idx.png
+      url: https://idx.dev/
+      description: 谷歌跨平台IDE，Firebase深度集成
+    - title: CodeWhisperer
+      logo: codewhisperer.png
+      url: https://aws.amazon.com/cn/q/developer/
+      description: AWS云服务专用，IAM策略自动生成
+    - title: GitHub Copilot
+      logo: github-copilot.png
+      url: https://github.com/features/copilot
+      description: 官方AI结对编程，GitHub仓库智能学习
 
 
 # - taxonomy: AI开发平台
