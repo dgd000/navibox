@@ -36,13 +36,13 @@ assetsPath            = "/assets/"                  # 静态资源路径
     key = ""
 
 [params.images]
-    favicon           = "assets/images/bi-favicon.png"
+    favicon           = "assets/images/ai-favicon.png"
     searchImageL      = "assets/images/bg-dna.jpg"		# 搜索部分浅色背景图
     searchImageD      = "assets/images/bg-bio.jpg"		# 搜索部分深色背景图
-    logoExpandLight   = "assets/images/bi-expand-dark.png"
-    logoExpandDark    = "assets/images/bi-expand-light.png"
-    logoCollapseLight = "assets/images/bi.png"
-    logoCollapseDark  = "assets/images/bi.png"
+    logoExpandLight   = "assets/images/ai-expand-dark.png"
+    logoExpandDark    = "assets/images/ai-expand-light.png"
+    logoCollapseLight = "assets/images/ai.png"
+    logoCollapseDark  = "assets/images/ai.png"
     
 [markup.goldmark.renderer]
     unsafe = true
