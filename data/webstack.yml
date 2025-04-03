@@ -335,60 +335,68 @@
       description: 官方AI结对编程，GitHub仓库智能学习
 
 
-# - taxonomy: AI开发平台
-#   icon: fas fa-graduation-cap fa-lg
-#   links:
-#     - title: NCBI
-#       logo: ncbi.jpg
-#       url: https://www.ncbi.nlm.nih.gov/
-#       description: National Center for Biotechnology Information.
-#     - title: Bioconda
-#       logo: bioconda.jpg
-#       url: https://anaconda.org/bioconda/
-#       description: "Bioconda :: Anaconda.org."
-#     - title: CPAN
-#       logo: cpan.jpg
-#       url: https://metacpan.org/
-#       description: Search the CPAN.
-#     - title: Galaxy Project
-#       logo: galaxy_project.png
-#       url: https://galaxyproject.org/
-#       description: Galaxy Community Hub.
-#     - title: R Project
-#       logo: r-project.jpg
-#       url: https://www.r-project.org/
-#       description: https://www.r-project.org
-#     - title: Bioconductor
-#       logo: bioconductor.jpg
-#       url: http://www.bioconductor.org/
-#       description: http://www.bioconductor.org
+- taxonomy: AI开发平台
+  icon: fas fa-graduation-cap fa-lg
+  links:
+    - title: Coze 
+      logo: coze.png
+      url: https://www.coze.cn/
+      description: 字节系AI Bot开发平台，快速创建智能对话助手
+    - title: Dify
+      logo: dify.png
+      url: https://dify.ai/
+      description: 开源LLM应用开发框架，可视化编排AI工作流
+    - title: SiliconFlow
+      logo: siliconflow.png
+      url: https://account.siliconflow.cn/
+      description: 深度求索企业级大模型部署平台，提供私有化解决方案
+    - title: Zion
+      logo: zion.png
+      url: https://www.functorz.com/
+      description: 函子科技自动化AI工作流平台，支持企业级业务集成
+    - title: 智谱清流
+      logo: qingliu.png
+      url: https://bigmodel.cn/agent
+      description: 智谱GLM大模型驱动的智能体开发与分发平台
+    - title: Wordware
+      logo: wordware.png
+      url: https://www.wordware.ai/
+      description: 生成式AI文档协作平台，结构化内容自动生成
+    - title: LangChain
+      logo: langchain.png
+      url: https://python.langchain.com/docs/introduction/
+      description: LLM应用开发框架，模块化组件链式调用开发范式
+    - title: 飞浆PaddlePaddle
+      logo: paddlepaddle.png
+      url: https://www.paddlepaddle.org.cn/
+      description: 百度开源深度学习框架，中文开发者生态完善
+    - title: 文心智能体
+      logo: baidu-yiyan.png
+      url: https://agents.baidu.com/center
+      description: 文心大模型智能体平台，行业场景应用快速构建
 
 
-# - taxonomy: AI训练模型
-#   icon: fas fa-share-alt fa-lg
-#   links:
-#     - title: NCBI
-#       logo: ncbi.jpg
-#       url: https://www.ncbi.nlm.nih.gov/
-#       description: National Center for Biotechnology Information.
-#     - title: Bioconda
-#       logo: bioconda.jpg
-#       url: https://anaconda.org/bioconda/
-#       description: "Bioconda :: Anaconda.org."
-#     - title: CPAN
-#       logo: cpan.jpg
-#       url: https://metacpan.org/
-#       description: Search the CPAN.
-#     - title: Galaxy Project
-#       logo: galaxy_project.png
-#       url: https://galaxyproject.org/
-#       description: Galaxy Community Hub.
-#     - title: R Project
-#       logo: r-project.jpg
-#       url: https://www.r-project.org/
-#       description: https://www.r-project.org
-#     - title: Bioconductor
-#       logo: bioconductor.jpg
-#       url: http://www.bioconductor.org/
-#       description: http://www.bioconductor.org
+- taxonomy: AI训练模型
+  icon: fas fa-share-alt fa-lg
+  links:
+    - title: Ollama
+      logo: ollama.png
+      url: https://ollama.com/
+      description: 本地化大模型部署工具，支持Llama/Mistral等主流模型
+    - title: 豆包大模型
+      logo: doubao-llm.png
+      url: https://www.volcengine.com/product/doubao
+      description: 火山引擎企业级大模型服务，提供API与定制训练
+    - title: 魔搭社区
+      logo: modelscope.png
+      url: https://www.modelscope.cn/my/overview
+      description: 阿里云开源模型共享平台，预训练模型即取即用
+    - title: HuggingFace
+      logo: huggingface.png
+      url: https://huggingface.co/
+      description: 全球最大开源AI社区，Transformer模型生态核心
+    - title: 讯飞星辰
+      logo: xunfei-xingchen.png
+      url: https://training.xfyun.cn/modelSquare
+      description: 讯飞多模态大模型平台，教育医疗行业方案成熟
         
