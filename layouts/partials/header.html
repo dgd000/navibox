@@ -18,7 +18,18 @@
     <meta name="theme-color" content="#f9f9f9" />
     <title>{{ .Site.Title }}</title>
     <link rel="shortcut icon" href="{{ absURL $.Site.Params.images.favicon }}" />
-    <meta name="keywords" content="{{ .Site.Title }}" />
+    <meta name="description" content="{{ $.Site.Params.description }}" />
+    <meta name="keywords" content="{{ $.Site.Params.keywords }}" />
+    <meta name="author" content="{{ $.Site.Params.author }}" />
+    <link rel="canonical" href="{{ .Permalink }}" />
+    <meta property="og:title" content="{{ .Site.Title }}" />
+    <meta property="og:description" content="{{ $.Site.Params.description }}" />
+    <meta property="og:url" content="{{ .Permalink }}" />
+    <meta property="og:site_name" content="{{ .Site.Title }}" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="{{ .Site.Title }}" />
+    <meta name="twitter:description" content="{{ $.Site.Params.description }}" />
     {{ if $.Site.Params.seo.baiduSiteVer }}
     <meta name="baidu-site-verification" content="{{ $.Site.Params.seo.baiduSiteVer }}" />
     {{ end }}
@@ -71,4 +82,38 @@
     {{ end }}
     <!-- end Fancybox -->
 
+    <!-- JSON-LD 结构化数据 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "{{ .Site.Title }}",
+      "url": "{{ .Site.BaseURL }}",
+      "description": "{{ $.Site.Params.description }}",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "{{ .Site.BaseURL }}?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+
+    <!-- 百度自动推送 -->
+    {{ if $.Site.Params.seo.baiduPush }}
+    <script>
+    (function(){
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        }
+        else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+    </script>
+    {{ end }}
+    <!-- end 百度自动推送 -->
 </head>

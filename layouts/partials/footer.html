@@ -1,6 +1,6 @@
-<script type='text/javascript' src='{{ absURL "assets/js/jquery.ui.touch-punch.min-0.2.2.js" }}' id='jqueryui-touch-js'></script>
-<script type='text/javascript' src='{{ absURL "assets/js/clipboard.min-5.6.2.js" }}' id='clipboard-js'></script>
-<script type='text/javascript' src='{{ absURL "assets/js/tooltip-extend.js" }}' id='iplaycode-nav-js'></script>
+<script type='text/javascript' src='{{ absURL "assets/js/jquery.ui.touch-punch.min-0.2.2.js" }}' id='jqueryui-touch-js' defer></script>
+<script type='text/javascript' src='{{ absURL "assets/js/clipboard.min-5.6.2.js" }}' id='clipboard-js' defer></script>
+<script type='text/javascript' src='{{ absURL "assets/js/tooltip-extend.js" }}' id='iplaycode-nav-js' defer></script>
 <script type='text/javascript' id='popper-js-extra'>
 /* <![CDATA[ */
 var theme = {"ajaxurl":"","addico":"https:\/\/nav.baidu.cn\/wp-content\/themes\/onenav\/images\/add.png","order":"asc","formpostion":"top","defaultclass":"io-grey-mode","isCustomize":"1","icourl":"","icopng":".png","urlformat":"1","customizemax":"10","newWindow":"0","lazyload":"1","minNav":"1","loading":"1","hotWords":"baidu","classColumns":" col-sm-6 col-md-4 col-xl-5a col-xxl-6a ","apikey":"TWpBeU1UVTNOekk1TWpVMEIvZ1M2bFVIQllUMmxsV1dZelkxQTVPVzB3UW04eldGQmxhM3BNWW14bVNtWk4="};
@@ -8,7 +8,7 @@ var theme = {"ajaxurl":"","addico":"https:\/\/nav.baidu.cn\/wp-content\/themes\/
 </script>
 <script type='text/javascript' src='{{ absURL "assets/js/popper.min.js" }}' id='popper-js'></script>
 <script type='text/javascript' src='{{ absURL "assets/js/bootstrap.min-4.3.1.js" }}' id='bootstrap-js'></script>
-<script type='text/javascript' src='{{ absURL "assets/js/theia-sticky-sidebar-1.5.0.js" }}' id='sidebar-js'></script>
+<script type='text/javascript' src='{{ absURL "assets/js/theia-sticky-sidebar-1.5.0.js" }}' id='sidebar-js' defer></script>
 <script type='text/javascript' src='{{ absURL "assets/js/lazyload.min-12.4.0.js" }}' id='lazyload-js'></script>
 
 {{ if $.Site.Params.expandSidebar }}
@@ -117,6 +117,69 @@ function switchNightMode(){
         $(".mode-ico").removeClass("icon-light");
         $(".mode-ico").addClass("icon-night");
     }
+}
+</script>
+
+<!-- 页面加载优化 -->
+<script type="text/javascript">
+// 添加浏览器缓存控制
+function addCacheControl() {
+    // 设置缓存控制头
+    var metaCache = document.createElement('meta');
+    metaCache.httpEquiv = 'Cache-Control';
+    metaCache.content = 'max-age=86400';
+    document.getElementsByTagName('head')[0].appendChild(metaCache);
+}
+
+// 图片懒加载优化
+function optimizeImageLoad() {
+    var lazyloadImages = document.querySelectorAll("img.lazy");
+    
+    if ("IntersectionObserver" in window) {
+        var imageObserver = new IntersectionObserver(function(entries, observer) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    var image = entry.target;
+                    image.src = image.dataset.src;
+                    image.classList.remove("lazy");
+                    imageObserver.unobserve(image);
+                }
+            });
+        });
+
+        lazyloadImages.forEach(function(image) {
+            imageObserver.observe(image);
+        });
+    }
+}
+
+// 初始化优化
+document.addEventListener("DOMContentLoaded", function() {
+    addCacheControl();
+    optimizeImageLoad();
+});
+
+// 添加页面预加载
+window.addEventListener('load', function() {
+    setTimeout(function() {
+        var links = document.getElementsByTagName('a');
+        for (var i = 0; i < links.length; i++) {
+            var href = links[i].getAttribute('href');
+            if (href && href.indexOf(window.location.hostname) > -1) {
+                var prefetchLink = document.createElement('link');
+                prefetchLink.rel = 'prefetch';
+                prefetchLink.href = href;
+                document.head.appendChild(prefetchLink);
+            }
+        }
+    }, 1000);
+});
+</script>
+
+<!-- 添加 GZIP 压缩提示 -->
+<script>
+if (window.console) {
+    console.log('NaviBox 已启用页面优化，包括图片延迟加载、资源预加载和浏览器缓存控制');
 }
 </script>
 </body>

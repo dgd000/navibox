@@ -2,6 +2,7 @@
 
 - taxonomy: 常用推荐
   icon: far fa-star
+  description: 精选高质量AI工具，包括领先的图像生成、对话模型和开发平台，提供最佳AI体验与效率提升方案
   links: 
     - title: Cubist AI
       logo: cubist.png
@@ -28,6 +29,7 @@
 
 - taxonomy: AI对话
   icon: fas fa-flask fa-lg
+  description: 顶级大语言模型聊天平台集合，包括专业对话AI助手、长文本处理专家和语音交互系统，解决各类文本交互需求
   links:
     - title: DeepSeek
       logo: deepseek.png
@@ -61,6 +63,7 @@
 
 - taxonomy: AI图像
   icon: far fa-folder-open fa-lg
+  description: 专业AI图像生成与编辑工具导航，涵盖艺术创作、商业设计和社交媒体素材制作的前沿图像AI应用
   links:
     - title: Cubist AI
       logo: cubist.png
@@ -95,6 +98,7 @@
       
 - taxonomy: AI视频
   icon: fas fa-film fa-lg
+  description: 一站式AI视频制作工具导航，集成创意视频生成、3D建模、角色动画与智能剪辑功能，满足全方位视频创作需求
   links:
     - title: 即梦AI
       logo: jimeng.png
@@ -125,6 +129,7 @@
 
 - taxonomy: AI写作
   icon: fas fa-tools fa-lg
+  description: 专业AI写作助手工具集，提供从论文润色到小说创作、营销文案与政务公文的多场景智能写作解决方案
   links:
     - title: Claude
       logo: claude.png
@@ -174,6 +179,7 @@
     
 - taxonomy: AI办公
   icon: fas fa-briefcase fa-lg
+  description: 全面的AI办公工具导航，收录智能文档分析、表格处理、思维导图、PPT设计与会议管理工具，全面提升办公效率
   list: 
     - term: AI文档
       links:
@@ -298,6 +304,7 @@
 
 - taxonomy: AI编程
   icon: fas fa-pencil-alt fa-lg
+  description: 专业AI编程工具集合，整合智能代码编辑器、云端开发环境和多语言编程助手，加速软件开发全流程
   links:
     - title: Cursor
       logo: cursor.png
@@ -359,6 +366,7 @@
 
 - taxonomy: AI开发平台
   icon: fas fa-graduation-cap fa-lg
+  description: 一流AI应用开发平台导航，提供从模型调用到应用发布的全链路工具，助力开发者快速构建AI产品
   links:
     - title: Coze 
       logo: coze.png
@@ -400,6 +408,7 @@
 
 - taxonomy: AI训练模型
   icon: fas fa-share-alt fa-lg
+  description: 精选AI模型训练与部署平台，包括开源大模型社区、本地化部署工具和企业级定制训练服务，满足各类AI开发需求
   links:
     - title: Ollama
       logo: ollama.png

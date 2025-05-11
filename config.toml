@@ -1,6 +1,6 @@
 baseURL               = "https://navibox.org/"
 languageCode          = "zh-CN"
-title                 = "我的AI导航"
+title                 = "NaviBox - 专业的AI导航平台 | 人工智能工具一站式导航"
 theme                 = "navibox"
 preserveTaxonomyNames = true
 disablePathToLower    = true
@@ -12,7 +12,8 @@ assetsPath            = "/assets/"                  # 静态资源路径
 
 [params]
     author        = "我的名字"
-    description   = "我的网址导航站"
+    description   = "NaviBox是专业的人工智能工具导航平台，收录优质AI对话、AI图像、AI视频、AI写作、AI办公与AI编程工具，助您快速发现和使用前沿AI应用"
+    keywords      = "AI导航,人工智能工具,AI对话,AI图像,AI视频,AI写作,AI编程,AI办公"
     upload        = "https://www.yuque.com/forms/share/1a1fee15-f7a9-4ee6-9dd4-b0ba9fef1871"      # 左侧导航栏的"网站提交"
     about         = "https://github.com/shenweiyan/Knowledge-Garden/discussions/10"	          # 左侧导航栏的"关于导航"页面(./about)
     repository    = "https://github.com/shenweiyan/WebStack-Hugo"  
@@ -31,6 +32,8 @@ assetsPath            = "/assets/"                  # 静态资源路径
     tj51laid        = ''                        		# 51.LA 网站统计
     tj51lack        = ''
     GoogleAdsClient = ''					# Google AdSense 
+    googleAnalytics = ''                    # Google Analytics ID
+    baiduPush       = true                  # 百度自动推送
 
 [params.qweather]
     key = ""

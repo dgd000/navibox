@@ -1,0 +1,63 @@
+{{ define "main" }}
+<div class="container sitemap-container">
+    <h1>NaviBox网站地图</h1>
+    <div class="row">
+        {{ range $.Site.Data.webstack }}
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <div class="card-header">
+                    <h2><i class="{{ .icon }}"></i> {{ .taxonomy }}</h2>
+                </div>
+                <div class="card-body">
+                    {{ if .description }}
+                    <p>{{ .description }}</p>
+                    {{ end }}
+                    <ul class="list-unstyled">
+                        {{ if .links }}
+                            {{ range .links }}
+                            <li><a href="{{ .url }}" target="_blank">{{ .title }}</a></li>
+                            {{ end }}
+                        {{ else if .list }}
+                            {{ range .list }}
+                            <h3>{{ .term }}</h3>
+                            <ul class="list-unstyled ml-3">
+                                {{ range .links }}
+                                <li><a href="{{ .url }}" target="_blank">{{ .title }}</a></li>
+                                {{ end }}
+                            </ul>
+                            {{ end }}
+                        {{ end }}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        {{ end }}
+    </div>
+</div>
+
+<style>
+.sitemap-container {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.sitemap-container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+.card {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: all 0.3s;
+}
+.card:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.card-header {
+    background-color: #f8f9fa;
+}
+.card-header h2 {
+    font-size: 1.2rem;
+    margin: 0;
+}
+</style>
+{{ end }} 
