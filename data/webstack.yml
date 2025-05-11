@@ -3,6 +3,10 @@
 - taxonomy: 常用推荐
   icon: far fa-star
   links: 
+    - title: Cubist AI
+      logo: cubist.png
+      url: https://cubistai.app/
+      description: 无限免费的 AI 图像生成器
     - title: DeepSeek
       logo: deepseek.png
       url: https://www.deepseek.com/
@@ -58,6 +62,10 @@
 - taxonomy: AI图像
   icon: far fa-folder-open fa-lg
   links:
+    - title: Cubist AI
+      logo: cubist.png
+      url: https://cubistai.app/
+      description: 无限免费的 AI 图像生成器
     - title: 即梦AI
       logo: jimeng.png
       url: https://jimeng.jianying.com/
@@ -78,6 +86,10 @@
       logo: stable-diffusion.png
       url: https://stablediffusionweb.com/
       description: 开源可控生成框架，本地部署首选方案
+    - title: NexShot AI
+      logo: nexshot.png
+      url: https://nexshot.app/
+      description: 专业人士的领先AI头像生成器
 
    
       
